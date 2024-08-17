@@ -1,0 +1,20 @@
+<!-- tests/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playwright Test Page</title>
+</head>
+<body>
+    <h1 id="header">Hello, World!</h1>
+    <button id="click-me">Click Me</button>
+    <p id="result">Initial Text</p>
+
+    <script>
+        document.getElementById('click-me').addEventListener('click', function() {
+            document.getElementById('result').innerText = 'Button Clicked!';
+        });
+    </script>
+</body>
+</html>
